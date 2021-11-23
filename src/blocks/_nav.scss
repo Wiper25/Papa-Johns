@@ -1,0 +1,28 @@
+.nav {
+  background-color: white;
+  height: auto;
+  min-height: 100px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 66px;
+  }
+  &__btn-link {
+    color: #70544f;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: color 0.35s;
+    transition: color 0.35s;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  &__btn-link:hover {
+    color: #50a684;
+  }
+}

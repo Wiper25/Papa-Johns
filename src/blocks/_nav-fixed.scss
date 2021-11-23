@@ -1,0 +1,33 @@
+.nav-fixed {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 2px 24px 0 rgba(83, 92, 90, 0.38);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  &__burger-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__btn-block {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  &__btn {
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #70544f;
+    font-weight: 700;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__btn:hover {
+    color: #70544f;
+    border-bottom: 3px solid #c21313;
+  }
+}
