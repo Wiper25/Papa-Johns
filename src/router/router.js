@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import App from '../App.vue'
-import Order from '../router/order.vue'
+import Home from '../view/Home.vue'
+import Order from '../view/Order.vue'
 
 Vue.use(Router);
 
@@ -10,8 +10,8 @@ let router = new Router({
     routes:[
         {
             path: '/',
-            name: 'App',
-            component: App
+            name: 'Home',
+            component: Home
         },
         {
             path: '/order',

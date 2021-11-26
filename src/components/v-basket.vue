@@ -51,8 +51,8 @@
           <h6 class="basket__general-title">Сумма заказа</h6>
           <h4 class="basket__general-price-number">{{ TOTAL_AMOUNT }} с</h4>
         </div>
-        <b-button class="basket__btn-registration cards-group__btn"
-          ><b-link href="/order">Оформить</b-link></b-button
+        <b-button class="basket__btn-registration cards-group__btn" to="/order"
+          >Оформить</b-button
         >
         <p class="basket__number-points">Начислится 52 бонуса</p>
       </div>
