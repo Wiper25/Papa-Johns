@@ -2,8 +2,25 @@
   <div class="header">
     <b-container class="bv-example-row bv-example-row-flex-cols">
       <b-row>
-        <b-col><img src="../assets/logo-header-papajohns.svg" alt="" /></b-col>
-        <b-col v-if="!statusBurgerMenu" class="text-center col-6">
+        <b-col
+          ><img src="../assets/logo-header-papajohns.svg" alt="" />
+          <b-link class="header__link-header">
+            <b-icon
+              b-icon
+              icon="compass"
+              shift-h="-4"
+              shift-v="-1"
+              aria-hidden="true"
+              font-scale="1"
+            >
+            </b-icon
+            >Бишкек</b-link
+          ></b-col
+        >
+        <b-col
+          v-if="!statusBurgerMenu"
+          class="text-center col-6 header__btn-header"
+        >
           <b-button class="header__btn-header-address">
             <b-icon
               b-icon
@@ -55,3 +72,10 @@ export default {
   },
 };
 </script>
+<style scoped>
+@media (max-width: 1280px) {
+  .header__burger-menu {
+    display: none;
+  }
+}
+</style>

@@ -4,6 +4,13 @@
   flex-direction: column;
   justify-content: center;
   background-color: white;
+  &__link-header {
+    color: #70544f;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 15px 0;
+  }
   &__burger {
     display: flex;
     justify-content: flex-end;
@@ -62,4 +69,18 @@
 }
 .active-btn-nav {
   color: #bfb7b6;
+}
+@media (max-width: 768px) {
+  .header {
+    &__btn-header {
+      display: none;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    &__link-header {
+      display: none;
+    }
+  }
 }

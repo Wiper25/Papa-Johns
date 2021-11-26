@@ -31,3 +31,16 @@
     border-bottom: 3px solid #c21313;
   }
 }
+@media (max-width: 1280px) {
+  .nav-fixed {
+    &__btn-block {
+      overflow-y: auto;
+    }
+    &__logo {
+      display: none;
+    }
+    &__burger-menu {
+      display: none;
+    }
+  }
+}

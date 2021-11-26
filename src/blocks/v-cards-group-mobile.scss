@@ -1,4 +1,4 @@
-.cards-group {
+.cards-group-mobile {
   &__container {
     display: flex;
   }
@@ -7,7 +7,8 @@
     padding: 16px 0px;
   }
   &__card {
-    width: 31%;
+    display: flex;
+    width: 100%;
     background-color: white;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -15,8 +16,14 @@
     padding: 0;
   }
   &__card-img {
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
+  }
+  &__card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
   }
   &__title-card {
     padding: 0 24px;
@@ -87,9 +94,12 @@
   }
   &__btn {
     border-radius: 24px;
-    width: 52%;
-    height: 48px;
-    background-color: #50a684;
+    height: 36px;
+    padding: 8px 18px;
+    background-color: #e1faf4 !important;
+    color: #50a684;
+    font-size: 14px;
+    font-weight: 700;
     border: 0;
   }
   &__price {
@@ -100,23 +110,4 @@
 .active {
   background-color: #ededed;
   color: #70544f;
-}
-@media (max-width: 1280px) {
-  .v-basket-comp {
-    display: none;
-  }
-}
-@media (max-width: 1024px) {
-  .cards-group {
-    &__card {
-      width: 48%;
-    }
-  }
-}
-@media (max-width: 768px) {
-  // .cards-group {
-  //   &__card {
-  //     width: 100%;
-  //   }
-  // }
 }

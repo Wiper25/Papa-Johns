@@ -2,7 +2,7 @@
   <div class="nav-fixed">
     <b-container>
       <b-row>
-        <b-col>
+        <b-col class="nav-fixed__logo">
           <img src="../assets/logo-header-papajohns.svg" alt="" />
         </b-col>
         <b-col v-if="!statusBurgerMenu" class="nav-fixed__btn-block">
@@ -24,7 +24,11 @@
             <b-link class="header__burger-menu-nav">Контакты</b-link>
             <b-button class="header__burger-menu-login">ВХОД</b-button>
           </div>
-          <b-button @click="burgerMenu" variant="white">
+          <b-button
+            class="nav-fixed__btn-burger-menu"
+            @click="burgerMenu"
+            variant="white"
+          >
             <b-icon
               class="header__btn-burger-menu"
               b-icon
