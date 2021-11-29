@@ -49,7 +49,7 @@
       <div class="basket__to-order">
         <div class="basket__general-price">
           <h6 class="basket__general-title">Сумма заказа</h6>
-          <h4 class="basket__general-price-number">{{ TOTAL_AMOUNT }} с</h4>
+          <h4 class="basket__general-price-number">{{ totalPrice }} с</h4>
         </div>
         <b-button class="basket__btn-registration cards-group__btn" to="/order"
           >Оформить</b-button
@@ -63,9 +63,9 @@
         type="text"
         placeholder="Ввести промокод"
       />
-      <b-button class="basket__send-promo-code"
-        ><b-icon icon="arrow-right-short"></b-icon
-      ></b-button>
+      <b-button class="basket__send-promo-code">
+        <b-icon icon="arrow-right-short"></b-icon>
+      </b-button>
     </div>
   </div>
 </template>
@@ -73,6 +73,11 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 export default {
+  data() {
+    return {
+      totalPrice: 0,
+    };
+  },
   computed: { ...mapGetters(["PRODUCT_BASKET", "TOTAL_AMOUNT"]) },
   methods: {
     ...mapMutations([
@@ -81,6 +86,14 @@ export default {
       "countDic",
       "countInc",
     ]),
+  },
+  watch: {
+    PRODUCT_BASKET() {
+      this.PRODUCT_BASKET.map((item) => {
+        this.totalPrice += item.pricePizza;
+        console.log(this.totalPrice);
+      });
+    },
   },
 };
 </script>

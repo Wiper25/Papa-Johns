@@ -1,0 +1,60 @@
+.additives {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  &__slider-bar {
+    display: flex;
+    align-items: center;
+  }
+  &__sliders {
+    overflow: hidden;
+  }
+  &__slider-line {
+    display: flex;
+    width: 1600px;
+  }
+  &__slide-card {
+    width: 18%;
+    min-height: 150px;
+    padding: 20px;
+    border: 4px solid #f8f8f8;
+    border-radius: 15px;
+    margin: 0px 5px;
+    display: flex;
+    align-items: center;
+  }
+  &__slide-card-img {
+    width: 35%;
+  }
+  &__product-name {
+    font-size: 14px;
+    color: #70544f;
+    line-height: 1.33;
+  }
+  &__product-netto {
+    line-height: 1.33;
+    font-weight: 400;
+    font-size: 14px;
+    color: #bfb7b6;
+    margin-bottom: 15px;
+  }
+  &__product-price {
+    color: #50a684;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+  }
+  // &__product-add-btn {
+  // }
+  &__price-btn-add-product {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__product-add {
+    font-size: 30px;
+    color: #50a684;
+  }
+}

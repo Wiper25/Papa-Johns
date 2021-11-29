@@ -3,7 +3,6 @@
   margin-bottom: 20px;
   padding: 40px;
   border-radius: 10px;
-  min-width: 728px;
   &__btn-basket {
     font-weight: 700;
     color: #70544f;
@@ -75,16 +74,25 @@
     align-content: center;
     height: 100%;
     align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #bfb7b6;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .product-basket {
     &__img-cards {
       display: none;
     }
     &__counter-price-block {
       width: 33%;
+    }
+    &__product {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

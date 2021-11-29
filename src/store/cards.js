@@ -2,6 +2,9 @@ export default {
     actions: {
     },
     mutations: {
+        sum(state,price) {
+            state.totalAmount += price
+        },
         countDic(state,index) {
             if (state.productBasket[index].count > 1) {
                 state.productBasket[index].count--

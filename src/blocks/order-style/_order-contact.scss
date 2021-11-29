@@ -1,0 +1,32 @@
+.contact {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  &__name-input-block {
+  }
+  &__name {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    display: block;
+    color: #bfb7b6;
+    line-height: 1.33;
+    margin-top: 15px;
+  }
+  &__name-input {
+    padding: 15px 30px;
+    border-radius: 12px;
+    border: none;
+    background-color: #f8f8f8;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #70544f;
+    line-height: 1.33;
+  }
+}
+.minWidth {
+  min-width: 250px;
+}

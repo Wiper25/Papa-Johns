@@ -116,7 +116,9 @@
       </b-row>
       <div class="v-basket-mobile">
         <b-icon icon="basket3-fill" variant="white"></b-icon>
-        <span class="v-basket-mobile__price">325c</span>
+        <router-link to="/order">
+          <span class="v-basket-mobile__price">325c</span>
+        </router-link>
       </div>
       <b-row class="v-basket-desktop">
         <vBasket class="v-basket-comp" v-if="true" />
